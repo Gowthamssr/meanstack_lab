@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iekart's Shopping Application - Sign Up</title>
+</head>
+<body>
+  <h1>Sign Up</h1>
+  <form>
+    <!-- Form elements will be added here -->
+
+    <label for="name">Name:</label>
+<input type="text" id="name" name="name" required placeholder="Enter your name">
+<br>
+<br>
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" placeholder="Enter your email" required>
+  <br>
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" name="password" id="password" placeholder="Enter your password" required minlength="8">
+  <br>
+  <br>
+  <label for="confirm-password">Confirm Password:</label>
+  <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password" required>
+  <br>
+  <br>
+  <label for="birthdate">Date of Birth:</label>
+  <input type="date" name="birthdate" id="birthdate" required>
+<br>
+<br>
+<label for="country">Country:</label>
+<select id="country" name="country" required>
+  <option value="">Select a country...</option>
+  <option value="usa">United States</option>
+  <option value="uk">United Kingdom</option>
+  <option value="germany">Germany</option>
+  <option value="Inida">India</option>
+  <!-- Add more options as needed -->
+</select>
+<br>
+<br>
+<label for="interests">Interests:</label>
+<input type="text" id="interests" name="interests" list="interestsList">
+<datalist id="interestsList">
+  <option value="Fashion">
+  <option value="Electronics">
+  <option value="Sports">
+  <!-- Add more options as needed -->
+</datalist>
+<br>
+<br>
+<button type="submit">Sign Up</button>
+
+  </form>
+</body>
+</html>
